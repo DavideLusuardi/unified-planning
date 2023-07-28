@@ -138,7 +138,7 @@ class PDDLGrammar:
             Suppress("(")
             + ":functions"
             - Group(
-                OneOrMore(predicate + Optional(Suppress("- number")))
+                ZeroOrMore(predicate + Optional(Suppress("- number")))
             ).setResultsName("functions")
             + Suppress(")")
         )

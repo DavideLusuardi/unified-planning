@@ -38,6 +38,9 @@ from pathlib import PurePath
 
 
 DEFAULT_ENGINES = {
+    "popf": ("up_popf", "popfPDDLPlanner"),
+    "optic": ("up_optic", "opticPDDLPlanner"),
+    "tfd": ("up_tfd", "tfdPDDLPlanner"),
     "fast-downward": ("up_fast_downward", "FastDownwardPDDLPlanner"),
     "fast-downward-opt": ("up_fast_downward", "FastDownwardOptimalPDDLPlanner"),
     "pyperplan": ("up_pyperplan.engine", "EngineImpl"),
@@ -94,6 +97,9 @@ DEFAULT_META_ENGINES = {
 }
 
 DEFAULT_ENGINES_PREFERENCE_LIST = [
+    "popf",
+    "optic",
+    "tfd",
     "fast-downward",
     "fast-downward-opt",
     "pyperplan",
